@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Serif';
+    background-color: white;
+    color: black;
+    line-height: 1.5;
+    background-image: url("bgblack.png");    
+    text-shadow: 0px 0px 1px #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background-color: white;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #eaeaea;
+    font-family: 'Kanit';
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    line-height: 1.5;
+}
+
+.navbar .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brandname {
+    font-family: 'Formula1 Display Wide';
+    font-size: 10px;
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-item {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+    color: red;
+}
+
+.nav-item:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.nav-item.active {
+    background-color: red;
+    color: white;
+}
+
+.page-container {
+    min-height: 1000px;
+    padding-top: 64px;
+    padding: 96px 16px 32px;
+    
+}
+
+.section {
+    margin-bottom: 64px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    text-shadow: 2px 2px #521818;
+    color: rgb(255, 255, 255)
+    
+}
+
+.page-heading {
+    font-family: 'Saira';
+    color: rgb rgb(243, 197, 197);
+    text-align: center;
+}
+
+.williams {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #64C4FF;
+    text-shadow: 0px 0px 1px #000000;
+}
+
+.sauber {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #52E252;
+    text-shadow: 0px 0px 1px #000000;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    margin-bottom: 16px;
+    text-align: center;
+    text-shadow: 0px 0px 1px #e65656;
+}
+
+.grid1 {
+    display: grid;
+    gap: 32px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.grid2 {
+    display: grid;
+    gap: 32px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+    
+}
+
+
+.featured-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 4px 6px 5px rgb(0, 0, 0);
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
